@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Signup() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#f6f8fa]">
+    <div className="min-h-[80vh] flex items-center justify-center">
         <form className="bg-white p-8 rounded-md shadow border border-gray-200 w-full max-w-sm">
             <h2 className="text-2xl font-semibold mb-6 text-center text-gray-900 font-mono tracking-tight">
                 Sign up

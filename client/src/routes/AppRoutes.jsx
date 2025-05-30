@@ -5,6 +5,8 @@ import BasicLayouts from '../layouts/BasicLayouts'
 import Home from '../pages/Home'
 import Login from '../pages/Login'
 import Signup from '../pages/Signup'
+import Calculator from '../pages/dashboard/Calculator'
+import DashboardLayout from '../layouts/DashboardLayout'
 
 
 export default function AppRoutes() {
@@ -17,7 +19,14 @@ export default function AppRoutes() {
             <Route path="/login" element={<Login/>}/>
             <Route path="/signup" element={<Signup/>}/>
         </Route>
-
+        <Route path='/dashboard' element={<DashboardLayout/>}>
+            <Route index element={<Calculator/>}/>
+            <Route path='/dashboard/calculator' element={<Calculator/>}/>
+            <Route path='/dashboard/calculator' element={<Calculator/>}/>
+            <Route path='/dashboard/calculator' element={<Calculator/>}/>
+            <Route path='/dashboard/calculator' element={<Calculator/>}/>
+            <Route path='/dashboard/calculator' element={<Calculator/>}/>
+        </Route>
         <Route path="*" element={<Notfound/>}/>
       </Routes>
     </div>

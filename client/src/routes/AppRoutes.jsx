@@ -12,7 +12,8 @@ export default function AppRoutes() {
     <div>
       <Routes>
         <Route path="/" element={<BasicLayouts/>}>
-            <Route index path="/home" element={<Home/>}/>
+            <Route index element={<Home/>}/>
+            <Route path="/home" element={<Home/>}/>
             <Route path="/login" element={<Login/>}/>
             <Route path="/signup" element={<Signup/>}/>
         </Route>

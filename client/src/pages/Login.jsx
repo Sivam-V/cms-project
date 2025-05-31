@@ -9,6 +9,7 @@ export default function Login() {
     function handleSubmit(event) {
         event.preventDefault();
         if(email === 'admin@gmail.com' && password === 'admin') {
+            navigate('/dashboard/intro');
             Swal.fire({
                 title: 'Login Successful',
                 text: 'Welcome to the Dashboard!',

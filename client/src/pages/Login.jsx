@@ -1,28 +1,19 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
-import Swal from 'sweetalert2';
+import { useContext } from 'react';
+import AuthContext from '../context/AuthContext';
+
 
 export default function Login() {
     const navigate = useNavigate();
     const [email,setEmail] = useState('');
     const [password,setPassword] = useState('');
+    const {login} = useContext(AuthContext);
+
+
     function handleSubmit(event) {
         event.preventDefault();
-        if(email === 'admin@gmail.com' && password === 'admin') {
-            navigate('/dashboard/intro');
-            Swal.fire({
-                title: 'Login Successful',
-                text: 'Welcome to the Dashboard!',
-                icon: 'success',
-            });
-        }
-        else {
-            Swal.fire({
-                title: 'Login Failed',
-                text: 'Invalid email or password',
-                icon: 'error',
-            });
-        }
+        login(email, password);
     }
 
   return (
@@ -55,5 +46,5 @@ export default function Login() {
                 </button>
             </form>
         </div>
-  )
+  );
 }

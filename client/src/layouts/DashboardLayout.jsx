@@ -8,6 +8,7 @@ const PATHS = [
     {path : '/dashboard/calculator', text : 'Calculator'},
     {path : '/dashboard/todo-list', text : 'Todo List'},
     {path : '/dashboard/profile', text : 'Profile'},
+    {path : '/dashboard/blog', text : 'Blog'},
 ]
 const STYLE ={
     active : {

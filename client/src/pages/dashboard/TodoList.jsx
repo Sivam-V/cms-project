@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function TodoList() {
+export default function Fun() {
   return (
     <div>
-      yet to be implemented.
+      
     </div>
   )
 }

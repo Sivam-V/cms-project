@@ -12,6 +12,7 @@ import Counter from '../pages/dashboard/Counter'
 import Stopwatch from '../pages/dashboard/Stopwatch'
 import TodoList from '../pages/dashboard/TodoList'
 import Profile from '../pages/dashboard/Profile'
+import Blog from '../pages/dashboard/Blog'
 
 
 export default function AppRoutes() {
@@ -32,6 +33,7 @@ export default function AppRoutes() {
             <Route path='/dashboard/stopwatch' element={<Stopwatch/>}/>
             <Route path='/dashboard/todo-list' element={<TodoList/>}/>
             <Route path='/dashboard/profile' element={<Profile/>}/>
+            <Route path='/dashboard/blog' element={<Blog />}/>
         </Route>
         <Route path="*" element={<Notfound/>}/>
       </Routes>
